@@ -24,7 +24,8 @@
         <tbody>
            
         <?php
-            require_once './PHPExcel/Classes/PHPExcel.php';
+            require_once 'https://github.com/PHPOffice/PHPExcel.git'
+           /* require_once './PHPExcel/Classes/PHPExcel.php';*/
             $archivo="tablaresponsive.xls";
             $inputFileType = PHPExcel_IOFactory::identify($archivo);
             $objReader = PHPExcel_IOFactory::createReader($inputFileType);
